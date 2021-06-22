@@ -18,7 +18,7 @@ titanic.Fare = titanic.Fare.fillna(titanic.Fare.median())
 titanic.Fare = titanic.Fare.map(lambda i: np.log(i) if i > 0 else 0)
 ```
 
-- Training model
+## Prediction model
 ```python
 skf = StratifiedKFold(n_splits = 10, shuffle = True, random_state = 5)
 AC = []
